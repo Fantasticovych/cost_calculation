@@ -6,7 +6,8 @@ const NewCost = (props) =>{
     const saveCostDataHandler = (inputCostData)=>{
 
         const costData = {
-            ...inputCostData
+            ...inputCostData,
+            id: Math.random().toString(),
         };
         
         props.onAddCost(costData);
